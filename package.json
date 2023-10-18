@@ -1,0 +1,19 @@
+{
+  "name": "adv-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cashcacho/adv-javascript.git"
+  },
+  "author": "Justine Cacho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cashcacho/adv-javascript/issues"
+  },
+  "homepage": "https://github.com/cashcacho/adv-javascript#readme"
+}
