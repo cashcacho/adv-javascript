@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Price Viewer</title>
+</head>
+<body>
+
+  <h1>Crypto Price Viewer</h1>
+  <p>Click the button below to get the latest LTC/BTC cryptocurrency price.</p>
+
+  <button id="getFactBtn">Get Crypto Price</button>
+
+  <script>
+    const getFactBtn = document.getElementById('getFactBtn');
+
+    getFactBtn.addEventListener('click', () => {
+      fetch('https://api.api-ninjas.com/v1/cryptoprice?symbol=LTCBTC')
+        .then(response => response.json())
+        .then(data => {
+          console.log(data);
+          // For demonstration, you can display the price on the page
+          alert('Latest LTC/BTC Price: ' + data.price);
+        })
+        .catch(error => {
+          console.error('Error fetching data:', error);
+          // Handle errors as needed
+        });
+    });
+  </script>
+
+</body>
+</html>
